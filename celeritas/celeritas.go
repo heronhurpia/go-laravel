@@ -10,8 +10,8 @@ type Celeritas struct {
 
 func (c *Celeritas) New(rootPath string) error {
 	pathConfig := initPaths{
-		rootPath: rootPath,
-		folderNames: {"handlers","migrations","views","data","public","tmp","logs","middleware"}
+		rootPath:    rootPath,
+		folderNames: []string{"handlers", "migrations", "views", "data", "public", "tmp", "logs", "middleware"},
 	}
 
 	err := c.Init(pathConfig)
